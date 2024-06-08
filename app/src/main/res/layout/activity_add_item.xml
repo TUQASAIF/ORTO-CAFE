@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardElevation="12dp"
+            android:background="#ffffff"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="22dp"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:cardCornerRadius="50dp"
+                    android:id="@+id/icon">
+
+                    <ImageView
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:id="@+id/photoUploade"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/bu_selectimage_home"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_margin="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:inputType="textEmailAddress"
+                    android:text="SELECT IMAGE"
+                    android:background="@drawable/busin"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="serif"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:paddingLeft="5dp"
+                    android:gravity="left"
+                    android:layout_gravity="left"
+                    android:id="@+id/ed_title_add"
+                    android:inputType="textEmailAddress"
+                    android:hint="TITLE"
+                    android:backgroundTint="@color/colorTop"
+                    android:textColor="@color/colorTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp" />
+
+
+
+
+
+                <EditText
+                    android:paddingLeft="5dp"
+                    android:gravity="left"
+                    android:layout_gravity="left"
+                    android:id="@+id/ed_price_D"
+                    android:inputType="numberDecimal|number"
+                    android:hint="PRICE DEFAULT"
+                    android:backgroundTint="@color/colorTop"
+                    android:textColor="@color/colorTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp" />
+
+
+                <Switch
+                    android:id="@+id/switchPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layoutDirection="ltr"
+                    android:minHeight="48dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:showText="true"
+                    android:textColor="@color/br"
+                    android:text="ALLOW SIZE"
+                    android:textOff=""
+                    android:textOn="" />
+
+
+
+                <EditText
+                    android:paddingLeft="5dp"
+                    android:gravity="left"
+                    android:layout_gravity="left"
+                    android:id="@+id/ed_price_S"
+                    android:inputType="numberDecimal|number"
+                    android:hint="PRICE SMALL"
+                    android:backgroundTint="@color/colorTop"
+                    android:textColor="@color/colorTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp" />
+
+
+
+
+                <EditText
+                    android:paddingLeft="5dp"
+                    android:gravity="left"
+                    android:layout_gravity="left"
+                    android:id="@+id/ed_price_m"
+                    android:inputType="numberDecimal|number"
+                    android:hint="PRICE MEDIUM"
+                    android:backgroundTint="@color/colorTop"
+                    android:textColor="@color/colorTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp" />
+
+
+
+
+                <EditText
+                    android:paddingLeft="5dp"
+                    android:gravity="left"
+                    android:layout_gravity="left"
+                    android:id="@+id/ed_price_L"
+                    android:inputType="numberDecimal|number"
+                    android:hint="PRICE LARGE"
+                    android:backgroundTint="@color/colorTop"
+                    android:textColor="@color/colorTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp" />
+
+
+                <Switch
+                    android:id="@+id/switchStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layoutDirection="ltr"
+                    android:minHeight="48dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:showText="true"
+                    android:text="ALLOW STYLE"
+                    android:textColor="@color/br"
+                    android:textOff=""
+                    android:textOn="" />
+
+
+                <Switch
+                    android:id="@+id/switchMilk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layoutDirection="ltr"
+                    android:minHeight="48dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:showText="true"
+                    android:text="ALLOW MILK"
+                    android:textColor="@color/br"
+                    android:textOff=""
+                    android:textOn="" />
+
+
+                <Switch
+                    android:id="@+id/switchSugar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layoutDirection="ltr"
+                    android:minHeight="48dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:showText="true"
+                    android:text="ALLOW SUGAR"
+                    android:textColor="@color/br"
+                    android:textOff=""
+                    android:textOn="" />
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="11dp"
+                    android:paddingBottom="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+
+                    <Button
+                        android:background="@drawable/busin"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="serif"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/bu_upload_event"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Upload"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</ScrollView>

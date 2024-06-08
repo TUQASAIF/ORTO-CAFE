@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    app:cardCornerRadius="10dp"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="14sp"
+        android:layout_marginRight="14dp"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/imagefone_contextfrind"
+            android:scaleType="fitXY"
+            android:src="@drawable/pu"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+
+        <TextView
+            android:id="@+id/text_name_contestfrind"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="17sp"
+            android:layout_marginEnd="17dp"
+            android:text="ICE"
+            android:textColor="#2d140d"
+            android:fontFamily="@font/font1"
+            android:gravity="start"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:rotation="180"
+            android:id="@+id/go"
+            android:scaleType="fitXY"
+            android:textDirection="rtl"
+            android:src="@drawable/previous"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

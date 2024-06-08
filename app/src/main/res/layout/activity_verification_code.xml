@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/po"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                android:fontFamily="@font/font1"
+                android:gravity="center"
+                android:lineSpacingExtra="4sp"
+                android:textColor="@color/br"
+                android:textSize="32sp"
+                android:textStyle="normal"
+                tools:text="VERIFICATION CODE!" />
+
+            <EditText
+                android:id="@+id/ed_phone_login"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="left"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/colorTop"
+                android:gravity="left"
+                android:hint="ENTER CODE"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/br"
+                android:textColorHint="@color/br" />
+
+
+            <Button
+                android:id="@+id/ed_login_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="29dp"
+                android:background="@drawable/busin"
+                android:fontFamily="@font/font1"
+                android:gravity="center"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="SEND"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="23sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+
+    android:layout_height="wrap_content">
+
+    <!--    <LinearLayout-->
+    <!--        android:padding="10dp"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:gravity="center"-->
+    <!--        android:layout_marginLeft="14sp"-->
+    <!--        android:layout_marginRight="14dp"-->
+    <!--        android:layout_height="80dp">-->
+
+    <!--&lt;!&ndash;        <ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:id="@+id/imagefone_contextfrind"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:scaleType="fitXY"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:src="@drawable/logo"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_width="45dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_height="45dp" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:id="@+id/text_name_contestfrind"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_width="0dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_marginStart="17sp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_marginEnd="17dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:text="test"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:textColor="#2d140d"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:fontFamily="@font/font1"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:gravity="start"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:textSize="20sp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_height="wrap_content" />&ndash;&gt;-->
+
+    <!--        <ImageView-->
+    <!--            android:rotation="180"-->
+    <!--            android:id="@+id/go"-->
+    <!--            android:scaleType="fitXY"-->
+    <!--            android:textDirection="rtl"-->
+    <!--            android:src="@drawable/previous"-->
+    <!--            android:layout_width="20dp"-->
+    <!--            android:layout_height="20dp" />-->
+
+    <!--    </LinearLayout>-->
+
+    <!--    <View-->
+    <!--        android:background="@color/colorTop"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="1dp"/>-->
+
+    <androidx.cardview.widget.CardView
+        android:orientation="vertical"
+        android:layoutDirection="ltr"
+        app:cardElevation="4dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/imagefone_contextfrind"
+                android:src="@color/overview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+
+                android:background="@color/overview"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_name_contestfrind"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="13dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="GOLD COFFEE"
+                        android:textColor="#fff"
+                        android:textSize="17dp"
+                        android:layout_height="wrap_content" />
+
+
+                    <!--                <TextView-->
+                    <!--                    android:paddingEnd="10dp"-->
+                    <!--                    android:layout_marginStart="5dp"-->
+                    <!--                    android:gravity="end"-->
+                    <!--                    android:layout_gravity="end"-->
+                    <!--                    android:id="@+id/text_priceD_supcategry"-->
+                    <!--                    android:layout_marginLeft="13dp"-->
+                    <!--                    android:layout_marginRight="13dp"-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:text="name"-->
+                    <!--                    android:textColor="#fff"-->
+                    <!--                    android:textSize="17dp"-->
+                    <!--                    android:layout_height="wrap_content" />-->
+
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_prices_supcategry"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="13dp"
+
+                        android:gravity="start"
+                        android:layout_gravity="start"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"                      android:text="price"
+                        android:textColor="#fff"
+                        android:textSize="17dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:id="@+id/text_pricem_supcategry"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="13dp"
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"                      android:text="discount"
+                        android:textColor="#fff"
+                        android:textSize="17dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:gravity="end"
+                        android:layout_gravity="end"
+                        android:paddingBottom="10dp"
+                        android:maxHeight="55dp"
+                        android:id="@+id/text_pricel_supcategry"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="13dp"
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"                      android:text="description"
+                        android:maxLines="1"
+                        android:textColor="#fff"
+                        android:textSize="17dp"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

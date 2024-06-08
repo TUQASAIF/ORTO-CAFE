@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.user.fragment.ProfileUserFragment">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="ltr"
+        android:orientation="vertical"
+        android:background="#F6E2DB"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:background="@drawable/hp"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+
+                android:gravity="center"
+                android:layout_height="240dp">
+                <RelativeLayout
+
+                    android:layout_marginBottom="33dp"
+                    android:layout_marginTop="33dp"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:id="@+id/lay_rel_img"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:background="@drawable/circle">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image_profile"
+                        android:layout_width="170dp"
+                        android:maxWidth="170dp"
+                        android:layout_gravity="center"
+                        android:src="@color/colorTop"
+                        android:layout_height="170dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorTop"
+                    android:text="USER EMAIL"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="7dp"
+                    android:id="@+id/text_email_profile"
+                    android:layout_width="match_parent"
+                    android:textSize="18dp"
+                    android:textColor="@color/br"
+                    android:text=""
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/br"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="1dp"/>
+
+
+
+                <TextView
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorTop"
+                    android:text="USER PHONE"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="7dp"
+                    android:id="@+id/text_phone_profile"
+                    android:layout_width="match_parent"
+                    android:textSize="18dp"
+                    android:textColor="@color/br"
+                    android:text=" "
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/br"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorTop"
+                    android:text="USER NAME"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="7dp"
+                    android:id="@+id/text_name_profile"
+                    android:layout_width="match_parent"
+                    android:textSize="18dp"
+                    android:textColor="@color/br"
+                    android:text=""
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/br"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="1dp"/>
+
+                <Button
+                    android:id="@+id/bu_update_profile"
+                    android:paddingLeft="11dp"
+                    android:paddingRight="11dp"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:text="Update"
+                    android:background="@drawable/busin"
+                    android:layout_marginBottom="13dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

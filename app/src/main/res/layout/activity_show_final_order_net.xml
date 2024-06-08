@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="4dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="#000"
+                    android:id="@+id/text_idorder_finalorder"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="ID ORDER"
+                    android:paddingLeft="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:paddingRight="6dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/print"
+                    android:src="@drawable/baseline_print_24"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"/>
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:textColor="@color/br"
+                android:id="@+id/text_location_finalorder"
+                android:layout_width="match_parent"
+                android:text="location"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textColor="@color/br"
+                android:id="@+id/text_note_finalorder"
+                android:layout_width="match_parent"
+                android:text="location"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textColor="@color/br"
+                android:id="@+id/text_date"
+                android:layout_width="match_parent"
+                android:text="location"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textColor="@color/br"
+                android:id="@+id/text_phone_frind_finalorder"
+                android:layout_width="match_parent"
+                android:text="location"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textColor="@color/br"
+                android:id="@+id/txtCurrent_date"
+                android:layout_width="match_parent"
+                android:text="location"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:background="@color/overview"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipe_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:background="@color/white"
+                android:id="@+id/recycal_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+</LinearLayout>
